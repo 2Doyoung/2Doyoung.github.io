@@ -1,15 +1,17 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
+import React from 'react';
+import Header from './components/Header';
+import Section from './components/Section';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <Router>
+    <>
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
+      <Section id="about" title="About Me" />
+      <Section id="projects" title="Projects" />
+      <Section id="contact" title="Contact" />
       <Footer />
-    </Router>
+    </>
   );
 }
 
