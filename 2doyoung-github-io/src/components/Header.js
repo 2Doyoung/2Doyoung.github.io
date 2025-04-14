@@ -14,7 +14,7 @@ const TitleStyled = styled.div`
 `;
 
 const SubTitleStyled = styled.div`
- 
+  
 `;
 
 function Header() {
