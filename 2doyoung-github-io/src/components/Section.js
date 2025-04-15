@@ -1,10 +1,21 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const SectionStyled = styled.div`
+    margin-left: 1rem;
+`;
+
+const SectionTitleStyled = styled.div`
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+`;
 
 function Section(props) {
   return (
-    <section id={props.id}>
-      <h2>{props.title}</h2>
-    </section>
+    <SectionStyled id={props.id}>
+      <SectionTitleStyled>{props.title}</SectionTitleStyled>
+      {props.children}
+    </SectionStyled>
   );
 }
 

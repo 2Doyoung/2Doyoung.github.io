@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Section from './components/Section';
 import Footer from './components/Footer';
 import styled from 'styled-components';
+import AboutMe from './components/sections/AboutMe';
 
 const Container = styled.div`
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
@@ -33,9 +34,12 @@ function App() {
       <Container>
         <Header />
         <Main>
-          <Section id="about" title="About Me" />
-          <Section id="projects" title="Projects" />
-          <Section id="contact" title="Contact" />
+          <Section id="about" title="About Me">
+              <AboutMe></AboutMe>
+          </Section>
+          <Section id="experience" title="Experience"></Section>
+          <Section id="skill" title="Skill"></Section>
+          <Section id="project" title="Project"></Section>
         </Main>
         <Footer />
       </Container>
