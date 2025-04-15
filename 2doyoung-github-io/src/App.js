@@ -9,8 +9,15 @@ const Container = styled.div`
 
     font-family: 'Noto Sans KR', sans-serif;
     scroll-behavior: smooth;
+    color: #333333;
+    line-height: 1.5;
+
+    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
-    width: 1200px;
+    padding: 0 20px;
+    box-sizing: border-box;
+
 `;
 
 const Main = styled.main`
