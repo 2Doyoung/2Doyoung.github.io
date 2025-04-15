@@ -18,7 +18,6 @@ const Container = styled.div`
     margin: 0 auto;
     padding: 0 20px;
     box-sizing: border-box;
-
 `;
 
 const Main = styled.main`
