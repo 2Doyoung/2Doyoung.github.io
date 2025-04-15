@@ -20,6 +20,14 @@ const ProfileStyled = styled.img`
 const LiStyled = styled.li`
     margin: 0;
     padding: 0;
+
+    span {
+        border-radius: 5px;
+        background-color: #585858;
+        color: #FFFFFF;
+        font-weight: 700;
+        padding: 2px;
+    }
 `;
   
 
@@ -74,9 +82,9 @@ function AboutMe(props) {
             <ProfileStyled src={profileImg}></ProfileStyled>
             <OlNumberedStyled>
                 <LiStyled>3년차 백엔드 개발자 이도영</LiStyled>
-                <LiStyled>Java, SpringFramework 기반 ERP 및 MES 대용량 데이터 최적화와 실시간 설비 데이터 모니터링 화면 개발</LiStyled>
-                <LiStyled>SpringBoot, MySQL, Thymeleaf, AWS EC2를 활용해 기획부터 개발까지 1인 플랫폼 운영</LiStyled>
-                <LiStyled>WebSocket, STOMP를 이용한 실시간 채팅 기능 개발</LiStyled>
+                <LiStyled>Java, SpringFramework 기반 <span>ERP 및 MES 대용량 데이터 최적화</span>와 <span>실시간 설비 데이터 모니터링 화면</span> 개발</LiStyled>
+                <LiStyled>SpringBoot, MySQL, Thymeleaf, AWS EC2를 활용해 <span>기획부터 개발까지 1인 플랫폼 운영</span></LiStyled>
+                <LiStyled>WebSocket, STOMP를 이용한 <span>실시간 채팅 기능</span> 개발</LiStyled>
             </OlNumberedStyled>
         </DisplayStyled>
     )
