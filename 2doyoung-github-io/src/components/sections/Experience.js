@@ -13,11 +13,13 @@ const CompanyPeriodWrapStyled = styled.div`
 const CompanyNameStyled = styled.div`
     font-size: 1.5rem;
     font-weight: 500;
+    margin-left: 0.5rem;
 `;
 
 const YearStyled = styled.div`
     font-size: 1.2rem;
     color: #848484;
+    margin-left: 0.5rem;
 `;
 
 const DescriptionStyled = styled.div`

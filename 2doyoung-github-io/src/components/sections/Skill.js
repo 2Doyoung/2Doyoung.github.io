@@ -10,6 +10,7 @@ const SkillTitleStyled = styled.div`
     font-weight: 600;
     width: 20rem;
     margin-bottom: 2rem;
+    margin-left: 0.5rem;
 `;
 
 const SkillListStyled = styled.div`
