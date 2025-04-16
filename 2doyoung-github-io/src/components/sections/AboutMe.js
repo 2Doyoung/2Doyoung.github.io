@@ -15,6 +15,7 @@ const ProfileStyled = styled.img`
     height: auto;
     border-radius: 1rem;
     flex-shrink: 0;
+    margin-left: 0.5rem;
 `;
   
 const LiStyled = styled.li`
