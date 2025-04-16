@@ -6,19 +6,20 @@ const SkillWrapStyled = styled.div`
 `;
 
 const SkillTitleStyled = styled.div`
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 600;
     width: 20rem;
     margin-bottom: 2rem;
 `;
 
 const SkillListStyled = styled.div`
-    margin-left: 1rem;
-    font-size: 1.5rem;
+    margin-right: 1rem;
+    font-size: 1.4rem;
     height: 2rem;
     padding: 0rem 1rem;
     border-radius: 5px;
     font-weight: 700;
+    margin-top: 0.3rem;
 `;
 
 const skillList = [

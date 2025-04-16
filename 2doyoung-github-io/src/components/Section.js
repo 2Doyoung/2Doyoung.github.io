@@ -1,21 +1,46 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const SectionStyled = styled.div`
-    margin-left: 1rem;
+const SectionWrap = styled.section`
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 `;
 
-const SectionTitleStyled = styled.div`
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
+const TitleWrap = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 20px;
+`;
+
+const Title = styled.h2`
+  font-size: 2.2rem;
+  font-weight: 700;
+  white-space: nowrap;
+  margin-left: 0.5rem;
+`;
+
+const Divider = styled.div`
+  flex-grow: 1;
+  height: 2px;
+  background-color: #ddd;
+`;
+
+const ContentWrap = styled.div`
+  
 `;
 
 function Section(props) {
   return (
-    <SectionStyled id={props.id}>
-      <SectionTitleStyled>{props.title}</SectionTitleStyled>
-      {props.children}
-    </SectionStyled>
+    <SectionWrap id={props.id}>
+      <TitleWrap>
+        <Title>{props.title}</Title>
+        <Divider />
+      </TitleWrap>
+      <ContentWrap>
+        {props.children}
+      </ContentWrap>
+    </SectionWrap>
   );
 }
 
