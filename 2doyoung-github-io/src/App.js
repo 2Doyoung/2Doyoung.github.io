@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import styled from 'styled-components';
 import AboutMe from './components/sections/AboutMe';
 import Experience from './components/sections/Experience';
+import Skill from './components/sections/Skill';
 
 const Container = styled.div`
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
@@ -40,7 +41,9 @@ function App() {
           <Section id="experience" title="Experience">
               <Experience></Experience>
           </Section>
-          <Section id="skill" title="Skill"></Section>
+          <Section id="skill" title="Skill">
+              <Skill></Skill>
+          </Section>
           <Section id="project" title="Project"></Section>
         </Main>
         <Footer />
