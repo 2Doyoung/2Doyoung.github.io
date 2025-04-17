@@ -36,13 +36,13 @@ function App() {
         <Header />
         <Main>
           <Section id="about" title="About Me">
-              <AboutMe></AboutMe>
+              <AboutMe />
           </Section>
           <Section id="experience" title="Experience">
-              <Experience></Experience>
+              <Experience />
           </Section>
           <Section id="skill" title="Skill">
-              <Skill></Skill>
+              <Skill />
           </Section>
           <Section id="project" title="Project"></Section>
         </Main>
