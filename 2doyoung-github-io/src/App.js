@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import AboutMe from './components/sections/AboutMe';
 import Experience from './components/sections/Experience';
 import Skill from './components/sections/Skill';
+import Project from './components/sections/Project';
 
 const Container = styled.div`
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
@@ -44,7 +45,9 @@ function App() {
           <Section id="skill" title="Skill">
               <Skill></Skill>
           </Section>
-          {/*<Section id="project" title="Project"></Section>*/}
+          <Section id="project" title="Project">
+              <Project></Project>
+          </Section>
         </Main>
         <Footer />
       </Container>
