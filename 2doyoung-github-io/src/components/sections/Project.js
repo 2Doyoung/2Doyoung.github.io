@@ -34,7 +34,7 @@ function Project(props) {
         <div>
             {projectList.map((project, index) => {
                 return (
-                    <ProjectList key={index} project={project}></ProjectList>
+                    <ProjectList key={index} project={project}></ProjectList> 
                 )
             })}
         </div>
