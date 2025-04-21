@@ -29,6 +29,7 @@ const ProjectItemStyeld = styled.div`
         font-weight: 600;
         padding: 0.3rem 0.8rem;
         border-radius: 5px;
+        margin-bottom: 0.5rem;
     }
 
     .period {
