@@ -2,25 +2,33 @@ import React from "react";
 import styled from "styled-components";
 
 const SkillWrapStyled = styled.div`
-    display: flex;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2rem;
 `;
 
 const SkillTitleStyled = styled.div`
-    font-size: 1.8rem;
-    font-weight: 600;
-    width: 20rem;
-    margin-bottom: 2rem;
-    margin-left: 0.5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  width: 20rem;
+  margin-left: 0.5rem;
+`;
+
+const SkillContentStyled = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem 1rem;
+  flex: 1;
 `;
 
 const SkillListStyled = styled.div`
-    margin-right: 1rem;
-    font-size: 1.4rem;
-    height: 2rem;
-    padding: 0rem 1rem;
-    border-radius: 5px;
-    font-weight: 700;
-    margin-top: 0.3rem;
+  font-size: 1.4rem;
+  height: 2rem;
+  padding: 0rem 1rem;
+  border-radius: 5px;
+  font-weight: 700;
+  color: ${(props) => props.color};
+  background-color: ${(props) => props.bg};
 `;
 
 const skillList = [
@@ -71,6 +79,11 @@ const skillList = [
           skillName: "Thymeleaf",
           skillColor: "#FFFFFF",
           skillBackgroundColor: "#005F0F"
+        },
+        {
+          skillName: "SpringSecurity",
+          skillColor: "#FFFFFF",
+          skillBackgroundColor: "#6DB33F"
         }
       ]
     },
@@ -128,14 +141,20 @@ const SkillItem = (props) => {
     const { skills } = props;
 
     return (
-        <SkillWrapStyled>
-            <SkillTitleStyled>{skills.skillTitle}</SkillTitleStyled>
-            {skills.skillSubList.map((skillSub, index) => {
-                return (
-                    <SkillSubListItem key={index} skillName={skillSub.skillName} skillColor={skillSub.skillColor} skillBackgroundColor={skillSub.skillBackgroundColor}></SkillSubListItem>
-                )
-            })}
-        </SkillWrapStyled>
+      <SkillWrapStyled>
+        <SkillTitleStyled>{skills.skillTitle}</SkillTitleStyled>
+        <SkillContentStyled>
+          {skills.skillSubList.map((skill, index) => (
+            <SkillListStyled
+              key={index}
+              color={skill.skillColor}
+              bg={skill.skillBackgroundColor}
+            >
+              {skill.skillName}
+            </SkillListStyled>
+          ))}
+        </SkillContentStyled>
+    </SkillWrapStyled>
     )
 }
 
