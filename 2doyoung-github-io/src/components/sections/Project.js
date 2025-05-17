@@ -75,6 +75,12 @@ const projectList = [
         projectPeriod: "2025.05",
         projectSkill: "SpringBoot, MySQL, SpringSecurity, JWT",
         proejctUrl: ""
+    },
+    {
+        projectName: "SpringBoot + JPA",
+        projectPeriod: "2025.05",
+        projectSkill: "SpringBoot, JPA",
+        proejctUrl: ""
     }
 ];
 
