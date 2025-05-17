@@ -84,6 +84,11 @@ const skillList = [
           skillName: "SpringSecurity",
           skillColor: "#FFFFFF",
           skillBackgroundColor: "#6DB33F"
+        },
+        {
+          skillName: "Hibernate",
+          skillColor: "#FFFFFF",
+          skillBackgroundColor: "#59666C"
         }
       ]
     },
