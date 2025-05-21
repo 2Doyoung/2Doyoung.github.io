@@ -129,6 +129,11 @@ const skillList = [
           skillName: "Tomcat",
           skillColor: "#333333",
           skillBackgroundColor: "#F8DC75"
+        },
+        {
+          skillName: "Jenkins",
+          skillColor: "#333333",
+          skillBackgroundColor: "#D24939"
         }
       ]
     }
